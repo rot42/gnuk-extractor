@@ -60,7 +60,7 @@ Install in a virtualenv
 ------------------------
 
 ```
-git clone --recurse-submodules https://github.com/rot42/gnuk-extractor
+git clone https://github.com/rot42/gnuk-extractor
 virtualenv -p python3 venv
 . ./venv/bin/activate
 pip install ./gnuk-extractor

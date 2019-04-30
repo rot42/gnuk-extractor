@@ -10,6 +10,10 @@ setup(
     version='1.0.0',
     description='Extract PGP private key from Gnuk / Nitrokey Start firmware',
     packages=['gnukextract'],
-    scripts=['gnuk-extractor'],
     install_requires=['PGPy == 0.5.2'],
+    entry_points={
+        'console_scripts': [
+            'gnuk-extractor = gnukextract.command_line:main',
+        ],
+    }
 )
